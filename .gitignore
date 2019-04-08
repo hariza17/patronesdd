@@ -1,0 +1,4 @@
+.venv
+*.rc
+Pipfile*
+.idea/*

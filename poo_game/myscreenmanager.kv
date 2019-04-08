@@ -1,0 +1,54 @@
+
+<MyScreenManager>:
+    Main:
+    Login:
+        id: login
+    Screen2:
+
+<Main>:
+    name: "main"
+    BoxLayout:
+        orientation: "horizontal"
+        Label:
+            text: "Hello"
+        Button:
+            text: "Go to Login Screen"
+            on_press: root.manager.current = "screen1"
+<Login>:
+    name: "screen1"
+    GridLayout:
+        size_hint: (0.5, 0.5)
+        pos_hint: {"center_x": 0.5, "center_y": 0.6}
+        rows: 3
+        padding: 20
+
+        Label:
+            size_hint: (0.2, 0.2)
+            text:"Password:"
+            font_size: 30
+            halign: "center"
+            valign: "middle"
+
+        TextInput:
+            id: password
+            size_hint: (0.2, 0.06)
+            cursor_blink: True
+            font_size: 20
+            multiline: False
+            password: True
+
+        Button:
+            text: "Continue"
+            size_hint: (0.2, 0.08)
+            on_release:
+                root.manager.ids.login.check_password(root.manager, password.text)
+
+<Screen2>:
+    name: "screen2"
+    BoxLayout:
+        orientation: "horizontal"
+        Label:
+            text: "Hello"
+        Button:
+            text: "Go to screen 1"
+            on_press: root.manager.current = "screen1"
