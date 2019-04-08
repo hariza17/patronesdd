@@ -1,10 +1,10 @@
 import pymysql.cursors
 
 # Connect to the database
-host = '10.131.6.60'
-user = 'proxysql_user'
-password = 'wWuq4bzIkOcCAOC3A9GKkdRf5PYLFrkM'
-db = 'user_public'
+host = 'ip'
+user = 'user'
+password = 'pass'
+db = 'db_name'
 
 product_code = (
     "general.kilo.yul.linux", "general.mega.yul.linux", "general.pico.yul.linux", "general.pico.yul.windows",
