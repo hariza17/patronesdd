@@ -1,10 +1,10 @@
 import pymysql.cursors
 
 # Connect to the database
-host = '10.162.75.12'
-user = 'proxysql_user'
-password = 'wWuq4bzIkOcCAOC3A9GKkdRf5PYLFrkM'
-db = 'user_public'
+host = 'ip'
+user = 'user'
+password = 'pass'
+db = 'db_name'
 
 flavors = (
     "general-S.1-05.dme.linux", "general-S.1-05.dme.windows", "general-S.1-1.dme.linux", "general-S.1-1.dme.windows",
